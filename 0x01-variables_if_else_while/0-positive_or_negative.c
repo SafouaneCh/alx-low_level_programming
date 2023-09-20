@@ -7,7 +7,7 @@
  *
  * Description: positive or negative
  *
- * return: 0 (success)
+ * Return: 0 (success)
 */
 
 int main(void)
@@ -17,10 +17,10 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf("%i is positive\n", n);
+		printf("%i is positive", n);
 	else if (n == 0)
-		printf("%i is zero\n", n);
+		printf("%i is zero", n);
 	else
-		printf("%i is negative\n", n);
+		printf("%i is negative", n);
 	return (0);
 }
