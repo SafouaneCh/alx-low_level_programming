@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * main - prints all arguments it receives.
+ * main - adds positive numbers
  * @argc: int
  * @argv: list
  * Return: 0
@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
 
 	for (int i = 1; i < argc; i++)
 	{
-		for (int j = 0; j < argv[i][j] != '\0'; j++)
+		for (int j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (!isdigit(argv[i][j]))
 			{
