@@ -8,7 +8,7 @@
  *
  * @c: the specific char
  *
- * Returns a pointer to the array, or NULL if it fails
+ * Return: 1 or 0
 */
 
 char *create_array(unsigned int size, char c);
@@ -19,14 +19,14 @@ char *create_array(unsigned int size, char c);
 	{
 		return (NULL);
 	}
-
-	else
+	if (array == NULL)
 	{
-		for (int i = 0; i < size; i++)
-		{
-			array[i] = c;
-		}
-		array[size] = '\0';
+		return (NULL);
 	}
+	for (int i = 0; i < size; i++)
+	{
+		array[i] = c;
+	}
+	array[size] = '\0';
 	return (array);
 }
