@@ -12,7 +12,7 @@
  * Return: 1 or 0
 */
 
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
 	char *array = (char *)calloc(size, sizeof(char));
 
