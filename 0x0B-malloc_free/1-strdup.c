@@ -3,11 +3,10 @@
 /**
  * _strdup -  returns a pointer to a new string
  *
- * @str: a string
+ * @str: string
  *
- * Return : 1 or 0
+ * Return : 0
 */
 
 char *_strdup(char *str)
 {
-
